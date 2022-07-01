@@ -1,0 +1,45 @@
+<form action="/cats" method="post">
+<div class="rendered-form">
+<div class="formbuilder-text form-group field-cat[name]">
+    <label for="cat[name]" class="formbuilder-text-label">Name</label>
+    <input type="text" class="form-control" name="cat[name]" value="<%= cat[name]%>" access="false" id="cat[name]">
+</div>
+<div class="formbuilder-radio-group form-group field-cat[sex]">
+    <label for="cat[sex]" class="formbuilder-radio-group-label">Sex</label>
+    <div class="radio-group">
+        <div class="formbuilder-radio-inline">
+            <input name="cat[sex]" access="false" id="cat[sex]-0" value="M" type="radio">
+            <label for="cat[sex]-0">Male</label>
+        </div>
+        <div class="formbuilder-radio-inline">
+            <input name="cat[sex]" access="false" id="cat[sex]-1" value="F" type="radio">
+            <label for="cat[sex]-1">Female</label>
+        </div>
+    </div>
+</div>
+<div class="formbuilder-select form-group field-cat[color]">
+    <label for="cat[color]" class="formbuilder-select-label">Colors</label>
+    <select class="form-control" name="cat[color]" id="cat[color]">
+    <option selected="true" id="cat[color]-6"></option>
+        <option value="black" selected="true" id="cat[color]-0">Black</option>
+        <option value="white" selected="true" id="cat[color]-1">White</option>
+        <option value="orange" id="cat[color]-2">Orange</option>
+        <option value="grey" id="cat[color]-3">Grey</option>
+        <option value="tuxedo" id="cat[color]-4">Tuxedo</option>
+        <option value="calico" id="cat[color]-5">Calico</option>
+        
+    </select>
+</div>
+<div class="formbuilder-date form-group field-cat[birth_date]">
+    <label for="cat[birth_date]" class="formbuilder-date-label">Date Field</label>
+    <input type="date" name="cat[birth_date]" access="false" id="cat[birth_date]">
+</div>
+<div class="formbuilder-textarea form-group field-cat[description]">
+    <label for="cat[description]" class="formbuilder-textarea-label">Description</label>
+    <textarea type="textarea" placeholder="Tell us about your cat!" class="form-control" name="cat[description]" access="false" id="cat[description]"></textarea>
+</div>
+<div class="formbuilder-button form-group field-button-1656708888562">
+        <button type="submit" class="btn-default btn" name="button-1656708888562" value="create cat" access="false" style="default" id="button-1656708888562">Submit Cat</button>
+    </div>
+</div>
+</form>

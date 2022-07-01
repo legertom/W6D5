@@ -1,0 +1,12 @@
+<h1> Meet all our cats!</h1>
+
+<h2>Cat rentals for every occasion! Birthdays, weddings, graduations, treatment-resistant depression.</h2>
+
+<% @cats.each do |cat| %>
+    
+    <%=  render 'cat_index_item', cat: cat %>
+     
+<% end %> 
+
+
+<h1>END OF CATS</h1>
